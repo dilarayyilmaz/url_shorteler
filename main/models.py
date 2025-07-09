@@ -1,4 +1,3 @@
-# main/models.py
 
 import string
 import random
