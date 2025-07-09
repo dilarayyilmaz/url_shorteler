@@ -55,7 +55,7 @@ def create_short_url(request, original_url=None):
     if request.method == 'POST':
         original_url = request.data.get('original_url')
     elif request.method == 'GET':
-        original_url = original_url  # bu satır gerek bile değil aslında
+        original_url = original_url
 
     if not original_url:
         return Response({"error": "Original URL is required."}, status=400)
